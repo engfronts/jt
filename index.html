@@ -1,0 +1,511 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit" />
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <meta name="viewport" id="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>
+        学生请假 - 徐州工程学院
+    </title>
+
+    <link href="Content/css/site.css" rel="stylesheet"/>
+
+    <script src="bundles/jquery.js"></script>
+
+    <script src="bundles/modernizr.js"></script>
+
+    <script src="bundles/bootstrap.js"></script>
+
+
+    <script src="Scripts/layer/layer.js"></script>
+
+    <style>
+
+
+        body {
+            /*            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);*/
+            /*            background-image: url(/Content/img/card.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;*/
+            /*            height: 100vh;
+            width: 100vw;*/
+            /*            height: 100vw;
+            width: 100vh;
+            left: -161px;
+            top: 161px;*/
+            position: absolute;
+        }
+
+        body, th, td, button, input, select, textarea {
+            font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            /*            background-image: url(/Content/img/card.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;*/
+            /*          height: 100vw;
+            width: 100vh;*/
+            z-index: 10;
+        }
+
+        .table-striped td:first-child {
+            text-align: right;
+            width: 150px;
+        }
+
+        .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        a:hover, a:focus, a:visited {
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        img.pass {
+            position: absolute;
+            transform: rotate( 339deg);
+            -ms-transform: rotate(339deg); /* IE 9 */
+            -moz-transform: rotate(339deg); /* Firefox */
+            -webkit-transform: rotate(339deg); /* Safari 和 Chrome */
+            /*          margin-top: 80px;
+            margin-left: 15px;*/
+            opacity: 0.3;
+            max-width: 90%;
+        }
+
+        div.flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <link href="Content/mui/css/mui.min.css" rel="stylesheet" />
+    <link href="Content/mui/css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="hidden" id="Id" value="fc3af086-7464-4d92-a476-fc20308e32f2" />
+    <input type="hidden" id="t" value="0" />
+    <div class="col-md-8 col-sm-12 col-md-offset-2 col-lg-6 col-lg-offset-3" style="padding-right:0;padding-left:0;">
+        <header class="mui-bar mui-bar-nav" id="header">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+                        <a class="mui-icon mui-icon-paperplane mui-pull-right js-url" href="javascript:;" data-url="/XGLeaveNote/LeaveNoteEnd/fc3af086-7464-4d92-a476-fc20308e32f2"><span style="font-size: 1.5rem;">销假&nbsp;&nbsp;</span></a>
+
+
+
+            <h1 class="mui-title">请假条</h1>
+        </header>
+        <div class="mui-content" style="width: 100vw;">
+
+            <div class="mui-card">
+                <div class="mui-card-header">基础信息</div>
+                <div class="mui-card-content flex">
+                    <img src="Images/pass.png" class="pass" />
+                    <table class="table table-striped table-bordered" style="margin-bottom: 0px;">
+                        <tr>
+                            <td>
+                                姓名：
+                            </td>
+                            <td>
+                                高月文
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                性别：
+                            </td>
+                            <td>
+                                女
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                学院：
+                            </td>
+                            <td>
+                                管理工程学院
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                年级：
+                            </td>
+                            <td>
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                班级：
+                            </td>
+                            <td>
+                                23应急管理
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                学号：
+                            </td>
+                            <td>
+                                23140500112
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                电话：
+                            </td>
+                            <td>
+                                19703322080
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                负责辅导员：
+                            </td>
+                            <td>
+                                吴红岩
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                宿舍地址：
+                            </td>
+                            <td>
+                                10B318
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                监护人姓名：
+                            </td>
+                            <td>
+                                高大旗
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                监护人电话：
+                            </td>
+                            <td>
+                                15162323491
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                与本人关系：
+                            </td>
+                            <td>
+                                父女
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                监护人是否同意：
+                            </td>
+                            <td>
+                                是
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="mui-card">
+                <div class="mui-card-header">请假信息</div>
+                <div class="mui-card-content flex">
+                    <img src="Images/pass.png" class="pass" />
+                    <table class="table table-striped table-bordered" style="margin-bottom: 0px;">
+                        <tr>
+                            <td>
+                                填报时间：
+                            </td>
+                            <td>
+                                2025-12-05 11:21
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                请假类型：
+                            </td>
+                            <td>
+                                事假
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                行动范围：
+                            </td>
+                            <td>
+                                徐州市区
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                请假原因：
+                            </td>
+                            <td>
+                                考科四
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                外出地址：
+                            </td>
+                            <td>
+                                徐州
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                请假时间段：
+                            </td>
+                            <td>
+                                起：2025-12-05 13:18<br>
+                                止：2025-12-06 22:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                不在校内住宿时间段：
+                            </td>
+                            <td>
+                                起：2025-12-05<br>
+                                止：2025-12-06
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                请假天数：
+                            </td>
+                            <td>
+                                2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                最终审核状态：
+                            </td>
+                            <td>
+
+                                <span class="text-success">审核通过</span><span class='mui-icon mui-icon-star-filled' style='color:#33bb33;font-size: 1.3em;'></span>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="mui-card">
+                <div class="mui-card-header">销假信息</div>
+                <div class="mui-card-content">
+
+                    <table class="table table-striped table-bordered" style="margin-bottom: 0px;">
+                        <tr>
+                            <td>
+                                是否发起销假：
+                            </td>
+                            <td>
+                                否
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+
+                <div class="mui-card">
+                    <div class="mui-card-header">操作记录</div>
+                    <div class="mui-card-content">
+                        <table class="table table-bordered text-center" style="margin-bottom: 0px;">
+                            <tr>
+                                <td style="min-width:100px;">
+                                    时间
+                                </td>
+                                <td style="min-width:70px;">
+                                    操作人
+                                </td>
+                                <td style="min-width:100px;">
+                                    事件
+                                </td>
+                            </tr>
+
+
+
+                                <tr>
+                                    <td>
+                                        2025-12-05
+                                        <br>
+                                        15:28
+                                    </td>
+                                    <td>
+                                        吴红岩
+                                        <br>
+                                        <span style="color:#99b">辅导员</span>
+                                    </td>
+                                    <td>
+                                        审核通过
+                                            <br>
+                                            <a href="javascript:;" class="js-memo">审核意见</a>
+                                            <input type="hidden" value="同意" />
+
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2025-12-05
+                                        <br>
+                                        11:21
+                                    </td>
+                                    <td>
+                                        高月文
+                                        <br>
+                                        <span style="color:#99b">学生</span>
+                                    </td>
+                                    <td>
+                                        发起请假
+
+                                    </td>
+                                    
+                                </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </div>
+
+    <script src="Content/mui/js/mui.min.js"></script>
+    <script>
+        mui.init();
+        mui.back = function () {
+            location.href = '/XGLeaveNote/LeaveNoteList?t=' + $('#t').val();
+        };
+
+        $(function () {
+            //离校报备销假按钮，提醒扫码
+
+
+            $('.js-memo').on('click', function () {
+                layer.open({
+                    title: '审核意见'
+                    , content: $(this).next().val()
+                });
+            })
+
+            $('#btnCancel').on('click', function (e) {
+                /*       e.preventDefault();*/
+                layer.confirm('您确定要撤销这条请假申请吗？', function (re) {
+                    var loadIdx = layer.load(1, { shade: [0.1, ['#fff']] });
+                    $.ajax({
+                        type: "POST",
+                        url: '/XGLeaveNote/CancelPost',
+                        data: { Id: $('#Id').val() },
+                        success: function (data) {
+                            layer.close(loadIdx);
+                            //layer.alert(data.message);
+                            //if (!data.Error) {
+                            //    location.reload();
+                            //}
+
+                            layer.alert(data.message, function () {
+                                location.reload();
+                            })
+
+                        }
+                    });
+                });
+
+            })
+            //$('#btnRemindInfo').on('click', function (e) {
+            //    e.preventDefault();
+            //    layer.open({
+            //        title: '关于催办'
+            //        , content: '在发起申请后，处于待审核或审核中状态时，可以点击“催办”，系统将会向当前审批节点的审核人员发送一条消息，提醒审核人员尽快处理。“催办”功能每两小时可以使用一次，21点至次日8点不可使用。'
+            //    });
+
+            //})
+
+            $('#btnRemind').on('click', function (e) {
+                e.preventDefault();
+                layer.confirm('<b>催办须知</b>：在发起申请后，处于待审核或审核中状态时，可以点击“催办”，系统将会向当前审批节点的审核人员发送一条消息，提醒审核人员尽快处理。“催办”功能每两小时可以使用一次，21点至次日8点不可使用。', { title: '您现在要催办吗？' }, function (re) {
+                    var loadIdx = layer.load(1, { shade: [0.1, ['#fff']] });
+                    $.ajax({
+                        type: "POST",
+                        url: '/XGLeaveNote/RemindPost',
+                        data: { Id: $('#Id').val() },
+                        success: function (data) {
+                            layer.close(loadIdx);
+                            //layer.open({
+                            //    title: '催办结果'
+                            //    , content: data.message
+                            //});
+                            //layer.alert(data.message, function () {
+                            //    if (!data.Error) {
+                            //        location.reload();
+                            //    }
+                            //})
+
+                            /* alert(data.Error);*/
+                            var indexA = layer.alert(data.message, {
+                                title: '催办结果'
+                                , closeBtn: 0
+                            }, function () {
+                                if (!data.Error) {
+                                    location.reload();
+                                }
+                                else {
+                                    layer.close(indexA);
+                                }
+                            });
+
+                        }
+                    });
+                });
+
+            })
+
+            $('#header').on('click', '.js-url', (function () {
+                /*           e.preventDefault();*/
+                _this = this;
+                location.href = $(_this).data('url');
+            }));
+
+        })
+
+
+    </script>
+</body>
+</html>
