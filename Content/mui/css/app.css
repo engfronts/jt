@@ -1,0 +1,185 @@
+﻿.title {
+	margin: 20px 15px 7px;
+	color: #6d6d72;
+	font-size: 15px;
+}
+
+* {
+	touch-action: pan-y;
+}
+
+/* 			::-webkit-input-placeholder {
+				text-align: right;
+			} */
+
+/*閲嶇疆琛ㄥ崟鏍峰紡*/
+.mui-input-group:before {
+	background: none;
+}
+
+.mui-input-group:after {
+	background: none;
+}
+
+.mui-input-group .mui-input-row {
+	height: auto;
+}
+
+.mui-input-row label {
+	line-height: 46px;
+	padding: 0;
+	text-align: left;
+	width: 30%;
+	padding-left: 10px;
+	color: #1E1E1E;
+	font-size: 15px !important;
+}
+
+.mui-input-group .mui-input-row:after {
+	background-color: #eee;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select {
+	width: 70%;
+	min-height: 46px;
+	text-align: right;
+	font-size: 15px;
+	border-radius: 0;
+}
+
+.mui-input-row label~textarea {
+	width: 70%;
+	min-height: 46px;
+	text-align: left;
+	font-size: 15px;
+	border-radius: 0;
+}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear,
+.mui-input-row .mui-input-password~.mui-icon-eye,
+.mui-input-row .mui-input-speech~.mui-icon-speech {
+	left: 35%;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+}
+
+.mui-input-row select {
+	font-size: 14px;
+	width: auto !important;
+	padding-right: 10px;
+}
+
+.mui-input-row select option {
+	text-align: right;
+}
+
+.mui-input-row textarea {
+	padding: 10px;
+	height: 62px;
+}
+
+.mui-input-row input[readonly],
+.mui-input-row input[disabled] {
+	color: #666;
+/*	background-color: rgb(240, 240, 240);
+	background: -webkit-linear-gradient(left, #fff, rgb(240, 240, 240)) !important;*/
+}
+
+.mui-input-row input:focus,
+.mui-input-row textarea:focus {
+	background-color: rgb(245, 253, 254);
+	background: -webkit-linear-gradient(left, #fff, rgb(245, 253, 254));
+}
+
+.imgList img {
+	margin: 0 1vw 2vw 1vw;
+	width: calc(17vw - 1px);
+	height: calc(17vw - 1px);
+}
+
+
+.imgList {
+	display: flex;
+	flex-wrap: wrap;
+	/* 	padding: 0 2.5vw 13px 2.5vw; */
+	padding: 2.5vw 2.5vw 0 2.5vw;
+}
+
+.imgList>div {
+	position: relative;
+}
+
+.imgList>div i {
+	position: absolute;
+	top: -4px;
+	right: -1px;
+	color: #fff;
+	border-radius: 50%;
+	background: #666;
+	font-size: 12px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 0 0 1px;
+}
+
+.returnPhotoText {
+	position: absolute;
+	background-color: #333333;
+	left: 0;
+	bottom: 0;
+	color: #FFFFFF;
+	width: calc(17vw - 1px);
+	margin: 0 1vw 2vw 1vw;
+	text-align: center;
+}
+
+/* Icon fallbacks when Mui icon font is unavailable */
+.mui-icon-left-nav:before,
+.mui-icon-paperplane:before,
+.mui-icon-star-filled:before {
+	content: '';
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.mui-icon-left-nav:before {
+	width: 3.2rem;
+	height: 3.2rem;
+	background-image: url('../img/back-arrow.png');
+	background-size: contain;
+}
+
+.mui-icon-paperplane:before {
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0.35rem;
+	background-image: url('../img/paper-plane.png');
+	background-size: contain;
+}
+
+.mui-icon-star-filled:before {
+	width: 1.8rem;
+	height: 1.8rem;
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2333bb33"%3E%3Cpath d="M12%2017.27%2018.18%2021%2016.54%2013.97%2022%209.24%2014.81%208.62%2012%202%209.19%208.63%202%209.24%207.45%2013.97%205.82%2021z"/%3E%3C/svg%3E');
+	background-size: contain;
+}
+
+.mui-bar-nav .mui-icon-left-nav {
+	color: #2a4d7f;
+	font-size: 1.4rem;
+}
+
+.mui-bar-nav .mui-icon-paperplane {
+	color: #1c7ff2;
+	font-size: 1.25rem;
+}
+
+
